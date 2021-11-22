@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="app">
+        <div class="header">
+            <i class="fa fa-whatsapp" id="fa1" style="font-size:48px ; color:#33FF33 ;"></i>
+            <div class="faf">
+                <i class="fa fa-search"  id="fa" style="font-size:25px"></i>
+            <i class="fa fa-ellipsis-v" id="fa" style="font-size:25px"></i></div>
+        </div>
+        <div class="features">
+            <ul>
+                <li>Chats</li>
+                <li>Status</li>
+                <li>Calls</li>
+            </ul>
+         
+        </div>
+        <div class="chats">
+        </div>
+        <div class="chat" (click)="arun()">
+            <div class="chatdp">
+                <img [src]="arundp" width="60" height="60">
+                
+            </div>
+           <div class="name">
+            <h3>Arun</h3>
+           
+           </div>
+         
+        </div>
+        <div class="chat" (click)="habib()">
+            <div class="chatdp">
+                <img [src]="habibdp" width="60" height="60">
+            </div>
+           <div class="name">
+            <h3>Habib</h3>
+            
+           </div>
+         
+        
+    </div>
+    </div>
+    <div class="othercomp">
+        <div *ngIf="Arun">
+            <app-chat1></app-chat1>
+        </div>
+        <div *ngIf="Habib">
+             <app-chat2></app-chat2>
+        </div>
+
+    </div>
+</div>

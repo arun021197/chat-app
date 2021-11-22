@@ -1,0 +1,24 @@
+<div class="header">
+    <div class="headerinfo" >
+        <img  [src]="habibdp" width="60" height="60">
+        <div>
+            <h3>Habib</h3>
+            <p>Last Seen<i class="fa fa-video-camera" aria-hidden="true"></i></p>
+        </div>
+     
+        </div>
+    </div>
+    <div class="chat">
+    <div  *ngFor="let me of c1toc2">
+        <div >
+            <div [ngClass]="{'message':me.senderName=='Habib','message1':me.senderName=='Arun'}">
+            
+                <a>{{me.senderName}}:{{me.msg}}</a> &nbsp;
+                <a class="time">{{me.time |date:"HH:mm"}}</a>
+
+            </div>
+        </div>
+
+    </div>
+    <input #textmsg placeholder="Type a message....."><i (click)="sent(textmsg.value)" id="icon" class="fa fa-send" style="font-size:30px; ; color:green;"></i>
+</div>

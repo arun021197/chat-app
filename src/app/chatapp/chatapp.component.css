@@ -1,0 +1,89 @@
+.app{
+   
+    width: 30%;
+    margin-left: 30px;
+    background-color:#DECD94 ;
+}
+.container{
+   
+    width: 100%;
+
+    margin-top: 35px;
+    display: flex;
+  height: 500px;
+  
+  
+}
+img{
+    border-radius: 50%;
+}
+.othercomp{
+    width: 60%;
+    background: white;
+
+}
+.header{
+    border:1px solid #EDEDED;
+    height: 60px;
+    width: 100%;
+    background-color: #075E54;
+   
+}
+.header {
+    float: left;
+}
+.fa{
+    margin-left: 30px;
+    color:gray;
+}
+#fa1{
+    margin-left:10px;
+}
+.faf{
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.features{
+    border:1px solid #EDEDED;
+    background-color: #DECD94;
+   
+    text-align: center;
+ 
+    
+}
+.features ul{
+    width: 100%;
+    display: flex;
+    gap:80px;
+    height: 30px;
+    list-style-type: none;
+    background-color: #25D366;
+    padding: 10px;
+  
+}
+
+.chat{
+    display: flex;
+    padding-left: 5px;
+    padding-top: 5px;
+    border:none;
+    
+}
+.name{
+
+    width: 75%;
+}
+.chatdp{
+   
+    width: 25%;
+
+    
+}
+.chat:hover{
+    background-color: white;
+}
+.name h3{
+    margin: 0;
+    padding: 0;
+}
